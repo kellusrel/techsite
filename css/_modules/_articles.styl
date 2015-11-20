@@ -1,0 +1,65 @@
+.article
+	float left
+	width 100%
+	line-height 30px
+	font-size 16px
+	&-cont
+		width 60%
+		float left
+		+below($tablet) 
+			width 	100% 
+ 
+	.inner
+		display flex
+		flex-wrap wrap
+		padding 15px 10px 15px 10px
+		+below($tablet)
+			padding 10px 0 10px 0px
+		
+	
+a 
+	text-decoration none
+	
+.article-box
+	width 80%
+	float left
+	border 2px gray 
+	border-style outset
+	margin-left 50px
+	transition: all .2s ease-in-out
+	&:hover  
+		transform: scale(1.05)
+		+below($tablet) 
+			transform: scale(1.00)
+
+	&:first-of-type
+		margin-top 0
+	&:last-of-type
+		margin-bottom 0
+	+below($tablet) 
+		margin-left 0px
+		width 100%
+		border 	none
+		border-top 	1px solid
+	+below($ltablet)
+		width 100%
+		margin 20px      
+
+	
+.article__img
+	float left
+	width 55%
+
+.article__title
+	float left
+	color  black
+	padding 5px  10px 5px 10px
+	
+.article__caption
+	text-decoration none
+	float left
+	padding 15px
+	color 	gray
+.article__text-box
+	float left
+	width 40%

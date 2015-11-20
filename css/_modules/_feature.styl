@@ -1,0 +1,82 @@
+.feature
+  float: left
+  width: 100%
+  background: white
+  .inner
+    +below($tablet)
+      padding 0px
+      
+
+
+.feature-content
+  width: 60%
+  margin: auto
+  +below($tablet)
+    width 100%
+  +below($ltablet)
+    width 100%  
+    
+  &__caption
+    padding 0px 15px 20px 15px
+    text-align left
+    padding 10px
+    color gray    
+    
+  &__title 
+    text-align left
+    font-size 24px
+    padding-left 15px
+    color  black
+       
+
+  &__item
+    color: #3498db
+    font-size: 16px
+    margin: 10px
+    position: relative
+    outline none
+ 
+
+  &__main-title
+    text-align: center
+    padding-left 30px
+    font-size 30px 
+
+  &__img
+    min-height: 200px
+    background-size: cover
+    border none 
+
+.feature-carousel
+  border: 3px gray outset
+  +below($tablet)
+    border none
+  .slick-prev
+    font-size: 20px
+    +below($tablet)
+      top 50%
+      left 5%
+      z-index 1
+    +below($ltablet)
+      left 5%
+      z-index 1  
+    
+  .slick-next
+    font-size: 20px
+    +below($tablet)
+      top 50%
+      right 5%
+      z-index 1
+    +below($ltablet)
+      right 5%
+      z-index 1  
+  .slick-prev:before,   .slick-next:before
+      +below($tablet)
+        font-size 40px
+      +below($ltablet)
+        font-size 30px 
+        
+  
+      
+
+
